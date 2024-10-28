@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+        background-color:pink;
+        }
+
+    </style>
+</head>
+<body>
+<div  style="color:red" class="main" align="center">
+    <h1>student registation form</h1>
+    <form method="post">
+        {{ form.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="" value="register">
+    </form>
+</div>
+
+</body>
+</html>
